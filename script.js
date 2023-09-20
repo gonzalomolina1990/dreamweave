@@ -39,3 +39,17 @@ updateHeroContent();
 
 // Automatically advance to the next image every 6 seconds
 intervalId = setInterval(nextImage, 6000);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const submitButton = document.getElementById("submit-button");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Perform any additional form validation or data processing here
+
+        // Display the "Email sent!" alert
+        alert("Email sent!");
+    });
+});
